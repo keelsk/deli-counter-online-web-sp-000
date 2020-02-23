@@ -3,11 +3,9 @@ def line(array)
   if (array.length == 0)
     puts "The line is currently empty."
   else
-    counter = 0
-    while counter < array.length
-      line_number = counter + 1
-      message = " " + line_number.to_s + ". " + array[counter]
-      counter += 1
+    array.each_with_index do |person, index|
+      line_number = index + 1
+      message = " " + line_number.to_s + ". " + person
     end
     puts "The line is currently:" + message
   end
