@@ -6,7 +6,7 @@ def line(array)
     counter = 0
     while counter < array.length
       line_number = counter + 1
-      message = " " + line_number + ". " + array[counter]
+      message = " " + line_number.to_s + ". " + array[counter]
       counter += 1
     end
     puts "The line is currently:" + message
