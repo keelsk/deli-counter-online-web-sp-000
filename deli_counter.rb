@@ -17,3 +17,12 @@ def take_a_number(line, name)
   line_number = line.index(name) +1
   puts "Welcome, #{name}. You are number #{line_number} in line."
 end
+
+def now_serving(line)
+  if (line.length == 0)
+    puts "There is nobody waiting to be served!"
+  else
+    new_line = line.shift
+    puts "Currently serving #{new_line.first}."
+  end
+end
