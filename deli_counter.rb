@@ -4,7 +4,7 @@ def line(array)
     puts "The line is currently empty."
   else
     counter = 0
-    while < array.length
+    while counter < array.length
       line_number = counter + 1
       message = " " + line_number + ". " + array[counter]
       counter += 1
